@@ -1,0 +1,47 @@
+Team: Synapse
+
+Facebook Project: No
+
+Project Title: 3D Object Detection - Classification
+
+Project Summary:
+
+The ability to identify 3D objects has many applications such as autonomous driving, robotics, human interaction, video surveillance, medical imaging, and pedestrian detection. Compared to 2D images, 3D data can have multiple representations: multi-view images, volumetric data, point clouds, and 3D meshes. Based on these representations, different methodologies have been developed. For example, 3D convolutions can be performed on 4D kernels (e.g., AlexNet, 3D ShapeNets). Another method is the Bird’s Eye View approach, trying to translate the 3D problem to a 2D problem. Point clouds are the most common representation of sensor data. There are several approaches that covert point clouds to other representations that are fed to Neural Networks (e.g., Voxelization 3D CNN and Projection/rendering 2D CNN). PointNet is an approach that performs end-to-end learning using point clouds which respects the permutation invariance of points in the input. PointNet can be used for object classification, object part segmentation and semantic scene parsing. Complex Yolo is an approach to 3d object detection in real time. If time allows, we will try a Yolov4 implementation of Complex Yolo and/or implement a Scaled yolo version.
+
+Approach:
+
+- Based on preliminary research outlined above, we will explore a few of the existing approaches outlined above. Our goal is to achieve similar performance to the current literature benchmarks and at least be able to replicate PointNet using existing code. We expect a fair amount of time will be devoted to gaining familiarity with the data.
+
+If time and compute budget allow:
+
+- We want to explore ways to improve on exiting approaches.
+
+- We want to use visualization methods to understand the features that the model has learnt.
+
+- Replicate Complex Yolo, likely v4 using existing code. If time allows, we will look at Scaled Yolo and try to implement. As of writing there is no code base which is a Scaled Complex Yolo model.
+
+Resources/Related Work: [1] “PV-RCNN++: Point-Voxel Feature Set Abstraction With Local Vector Representation for 3D Object Detection”, Shi, S, et. al.
+
+[2] “"Pointnet: Deep learning on point sets for 3d classification and segmentation", Charles, Qi et al. [3] “3D ShapeNets: A Deep Representation for Volumetric Shape Modeling”, Wu, Z., et al.
+
+[4] “Voxel R-CNN: Towards High Performance Voxel-based 3D Object Detection”, Deng J., et. al.
+
+[5] “Spatial Transformer Networks”, Jaderberg M., et. al.
+
+[6] “Complex-YOLO: Real-time 3D Object Detection on Point Clouds”, Simon M. et al.
+
+[7] “YOLOv4: Optimal Speed and Accuracy of Object Detection”, Bochkovskiy A. et al.
+
+[8] “Scaled-YOLOv4: Scaling Cross Stage Partial Network”, Chin-Yao W. et al.
+
+Datasets:
+
+ModelNet (CAD models from the 10 or 40 categories). https://modelnet.cs.princeton.edu/
+
+The 3D object detection benchmark. http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d
+
+Team Members:
+
+Carlos Brioso
+
+Travis Ruddy
